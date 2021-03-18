@@ -1,0 +1,4 @@
+{
+    "jwt_secreat_key": "pactolous_key",
+    "db_limit": 10
+}
