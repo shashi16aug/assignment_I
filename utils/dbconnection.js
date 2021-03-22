@@ -15,6 +15,3 @@ db.on("error", err => {
 db.on("connected", (err, res) => {
     console.log("connection successfully stablish:")
 })
-
-
-//mongodb+srv://sugarbox:sugarbox@cluster0.8fevm.mongodb.net/sugarbox_assignment?retryWrites=true&w=majority

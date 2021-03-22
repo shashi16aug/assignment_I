@@ -1,16 +1,18 @@
 const express = require('express');
 const router = express.Router();
-const packtolusUsers = require('../controller/packtolusUsers');
-const validator = require('../middleware/apiValidator');
+const musicalbum = require('../controller/musicAlbum');
+
 
 
 /**
  *  routes for creating user
  */
 
-router.post('/user', packtolusUsers.userCreate);
-router.post('/user-login/', packtolusUsers.userLogIn);
-router.get('/users/', validator.tokenValidator, packtolusUsers.userList);
+router.post('/createalbum', musicalbum.createMusicAlbum);
+router.post('/createmusicians/', musicalbum.createMusicians);
+router.get('/users/', musicalbum.userList);
+router.get('/musiclist', musicalbum.musicList);
+router.get('/musiclistbyname', musicalbum.musicAlbumByName);
 
 
 
